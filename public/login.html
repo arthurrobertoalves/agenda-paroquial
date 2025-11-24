@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Agenda Paroquial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-page">
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <h1>Agenda Paroquial</h1>
+                <p>Acesse sua conta</p>
+            </div>
+
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="login">Entrar</button>
+                <button class="tab-btn" data-tab="register">Cadastrar</button>
+            </div>
+
+            <!-- Formulário de Login -->
+            <form id="login-form" class="auth-form active">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" required autocomplete="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="login-senha">Senha</label>
+                    <input type="password" id="login-senha" required autocomplete="current-password">
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+                <div id="login-error" class="error-message"></div>
+            </form>
+
+            <!-- Formulário de Registro -->
+            <form id="register-form" class="auth-form">
+                <div class="form-group">
+                    <label for="register-nome">Nome</label>
+                    <input type="text" id="register-nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" required autocomplete="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="register-senha">Senha</label>
+                    <input type="password" id="register-senha" required autocomplete="new-password" minlength="6">
+                </div>
+
+                <div class="form-group">
+                    <label for="register-tipo">Tipo de Conta</label>
+                    <select id="register-tipo" required>
+                        <option value="">Selecione...</option>
+                        <option value="fiel">Fiel</option>
+                        <option value="paroquiano">Paroquiano</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="register-igreja">Igreja</label>
+                    <input type="text" id="register-igreja" placeholder="Nome da igreja">
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Cadastrar</button>
+                <div id="register-error" class="error-message"></div>
+            </form>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
+

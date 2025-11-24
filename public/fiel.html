@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Agenda Paroquial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-content">
+                <h1>Agenda Paroquial</h1>
+                <div class="user-info">
+                    <span id="user-name"></span>
+                    <a href="/logout" class="btn btn-link">Sair</a>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="page-header">
+                <h2>Eventos da Igreja</h2>
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Buscar eventos...">
+                </div>
+            </div>
+
+            <div id="eventos-container" class="eventos-grid">
+                <div class="loading">Carregando eventos...</div>
+            </div>
+        </main>
+    </div>
+
+    <script src="fiel.js"></script>
+</body>
+</html>
+

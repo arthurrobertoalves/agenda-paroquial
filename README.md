@@ -25,25 +25,6 @@ Sistema profissional de gerenciamento de eventos paroquiais com autenticação e
 
 1. Clone ou baixe o projeto
 
-2. Configure o arquivo `.env` na raiz do projeto:
-```bash
-cp .env.example .env
-```
-
-Edite o arquivo `.env` com suas configurações:
-```env
-DB_HOST=localhost
-DB_PORT=3306
-DB_USER=root
-DB_PASSWORD=sua_senha
-DB_NAME=agenda_paroquial
-
-PORT=3000
-NODE_ENV=development
-
-SESSION_SECRET=sua-chave-secreta-aqui
-```
-
 3. Instale as dependências do backend:
 ```bash
 npm install
@@ -55,7 +36,6 @@ npm install
 
 1. Inicie o servidor backend:
 ```bash
-cd backend
 npm start
 ```
 
@@ -146,5 +126,3 @@ O sistema utiliza MySQL. O banco de dados e as tabelas são criados automaticame
 Este projeto é de código aberto e está disponível para uso livre.
 
 ---
-
-Desenvolvido com ❤️ para gerenciamento de agendas paroquiais

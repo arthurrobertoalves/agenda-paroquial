@@ -2,29 +2,6 @@
 
 Sistema profissional de gerenciamento de eventos paroquiais com autenticação e controle de acesso. Desenvolvido com HTML, CSS, JavaScript no frontend e Express.js no backend, utilizando MySQL como banco de dados.
 
-## 🏗️ Estrutura do Projeto
-
-```
-agendaparoquial/
-├── backend/
-│   ├── database/
-│   │   └── database.js       # Configuração MySQL
-│   ├── routes/
-│   │   ├── auth.js          # Rotas de autenticação
-│   │   └── eventos.js        # Rotas de eventos
-│   ├── server.js            # Servidor Express
-│   └── package.json         # Dependências do backend
-├── frontend/
-│   ├── login.html           # Página de login
-│   ├── fiel.html            # Dashboard para fieis
-│   ├── paroquiano.html      # Dashboard para paroquianos
-│   ├── styles.css           # Estilos
-│   ├── login.js            # Lógica de autenticação
-│   ├── fiel.js             # Lógica do dashboard fiel
-│   └── paroquiano.js        # Lógica do dashboard paroquiano
-├── .env.example             # Exemplo de variáveis de ambiente
-└── README.md               # Este arquivo
-```
 
 ## 🚀 Características
 
@@ -37,7 +14,6 @@ agendaparoquial/
 - 💾 Banco de dados MySQL
 - 📱 Design responsivo para mobile
 - 🎯 Código escalável e bem estruturado
-- 🔧 Configuração via arquivo .env
 
 ## 📋 Pré-requisitos
 
@@ -70,7 +46,6 @@ SESSION_SECRET=sua-chave-secreta-aqui
 
 3. Instale as dependências do backend:
 ```bash
-cd backend
 npm install
 ```
 
